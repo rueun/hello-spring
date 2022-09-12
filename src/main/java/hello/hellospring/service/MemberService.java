@@ -9,13 +9,11 @@ import java.util.List;
 import java.util.Optional;
 
 // Service에서 비즈니스 로직을 만들고
-@Service
 public class MemberService {
     private final MemberRepository memberRepository;
 
     // MemberService를 생성할 때 스프링 Container가 MemberRepository를 넣어줌(의존성 주입)
-    @Autowired
-    public MemberService(MemberRepository memberRepository) { 
+    public MemberService(MemberRepository memberRepository) {
         this.memberRepository = memberRepository;
     }
 
