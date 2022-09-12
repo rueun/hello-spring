@@ -5,6 +5,7 @@ import org.springframework.stereotype.Repository;
 
 import java.util.*;
 
+// Repository에서 데이터를 저장
 @Repository
 public class MemoryMemberRepository implements MemberRepository {
 
